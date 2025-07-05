@@ -8,7 +8,7 @@ st.title("ISRO Chatbot")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Load scraped data and embeddings once
+
 if "ls" not in st.session_state:
     st.session_state.ls, st.session_state.embeddings, st.session_state.model = get_data()
 
@@ -25,11 +25,11 @@ if prompt := st.chat_input("Ask me anything about all the ISRO Missions"):
     prompt,
     st.session_state.ls,
     st.session_state.embeddings,
-    st.session_state.model  # ✅ Pass model here
+    st.session_state.model
 )
 
     reply = "\n\n".join(
-        [f"✅ Score: {score:.2f}\n{para}" for score, para in results]
+        [f"✅ Score: {score:.2f}\n{para}" for score, para in results]# gives all the answers which matches by cosine similarity
     )
 
     with st.chat_message("assistant"):

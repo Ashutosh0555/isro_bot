@@ -1,7 +1,7 @@
 print("is working")
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity# primary way of testing if user input matches our stored data
 import numpy as np
-from sentence_transformers import SentenceTransformer  # Optional for inference
+from sentence_transformers import SentenceTransformer  # for inference
 
 def find_similar_paragraphs(query, ls, embeddings, model, top_k=3, threshold=0.5):
     query_embedding = model.encode([query])

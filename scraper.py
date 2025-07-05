@@ -13,7 +13,7 @@ import json
 import numpy as np
 
 def get_data():
-    # Load all data from multiple JSON files
+    # Loading all data from multiple JSON files
     with open("missions1.json", "r", encoding="utf-8") as f1, \
          open("missions2.json", "r", encoding="utf-8") as f2, \
          open("mosdac_faq.json", "r", encoding="utf-8") as f3:
@@ -25,10 +25,10 @@ def get_data():
     # Convert FAQ into question+answer strings
     faq_data = [f"Q: {item['question']}\nA: {item['answer']}" for item in faq_raw]
 
-    # Combine all data
+    # Combining all data
     combined = mission1 + mission2 + faq_data
 
-    # Load SentenceTransformer model and encode
+    # Loading SentenceTransformer model and encode
     model = SentenceTransformer('all-MiniLM-L6-v2')
     embeddings = model.encode(combined)
 
