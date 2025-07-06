@@ -40,8 +40,8 @@ A smart chatbot that answers your questions about ISRO missions and MOSDAC data 
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/Ashurosh0555/isro-chatbot
-cd isro-chatbot
+git clone https://github.com/Ashurosh0555/isro_bot
+cd isro_bot
 
 # 2. Create virtual environment 
 python -m venv venv
