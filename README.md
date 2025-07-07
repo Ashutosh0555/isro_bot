@@ -3,7 +3,7 @@
 A smart chatbot that answers your questions about ISRO missions and MOSDAC data using semantic search and sentence embeddings.
 
 🔗 **Live Demo** : _Coming Soon_  
-📁 **GitHub Repo:** https://github.com/Ashutosh0555/isro-chatbot
+📁 **GitHub Repo:** https://github.com/Ashutosh0555/isro_bot
 
 ---
 
